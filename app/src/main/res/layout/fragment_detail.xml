@@ -54,7 +54,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:textColor="#de000000"
-                android:text="@{String.valueOf(viewModel.selectedProperty.price)}"
+                android:text="@{viewModel.displayPropertyType}"
                 android:textSize="39sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/main_photo_image"
@@ -69,7 +69,7 @@
                 android:textSize="20sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/property_type_text"
-                tools:text="$100,000" />
+               android:text="@{viewModel.displayPropertyPrice}" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
